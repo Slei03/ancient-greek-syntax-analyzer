@@ -1,0 +1,31 @@
+#attr-table{
+    max-height: 25em;
+    overflow-y: auto;
+} 
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+ 
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+    max-width: 30em;
+    overflow-x: auto;
+}
+ 
+table tr:hover {
+    background-color: #ddd;
+}
+ 
+table th {
+    background-color: #076388;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
