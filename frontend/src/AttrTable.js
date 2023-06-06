@@ -2,6 +2,8 @@ import React, { useMemo } from "react";
 import { useTable } from "react-table";
 import './AttrTable.css'
 
+// Referenced: https://www.copycat.dev/blog/react-table/
+
 export default function AttrTable({data}) {
     const columns = useMemo(() => [
         {

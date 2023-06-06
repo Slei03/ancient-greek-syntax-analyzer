@@ -118,15 +118,14 @@ export default function ModelForm() {
 
             <div id="output">
                 {(error && !loading) && <p>An error occurred. Please try again later.</p>}
+
                 {(!error && loading)
                     ?   <ReactLoading id="loading" type="spinningBubbles" color="#000" />
                     :   output.map(({sentence, link}, index) => (
                             <OutputBox id="outputbox" key={index} sentence={sentence} url={link}></OutputBox>
                         ))
                 }
-
                 <br/>
-
                 {(!error && !loading) && <AttrTable data={attrData}/>}
             </div>
         </div>
